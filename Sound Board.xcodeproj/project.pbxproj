@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E4A3FBFF1E8954BE001669ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3FBFE1E8954BE001669ED /* AppDelegate.swift */; };
-		E4A3FC011E8954BE001669ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3FC001E8954BE001669ED /* ViewController.swift */; };
+		E4A3FC011E8954BE001669ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3FC001E8954BE001669ED /* MainViewController.swift */; };
 		E4A3FC041E8954BE001669ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A3FC021E8954BE001669ED /* Main.storyboard */; };
 		E4A3FC071E8954BE001669ED /* Sound_Board.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4A3FC051E8954BE001669ED /* Sound_Board.xcdatamodeld */; };
 		E4A3FC091E8954BE001669ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A3FC081E8954BE001669ED /* Assets.xcassets */; };
 		E4A3FC0C1E8954BE001669ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A3FC0A1E8954BE001669ED /* LaunchScreen.storyboard */; };
+		E4A3FC141E895C57001669ED /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3FC131E895C57001669ED /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4A3FBFB1E8954BD001669ED /* Sound Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A3FBFE1E8954BE001669ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4A3FC001E8954BE001669ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4A3FC001E8954BE001669ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E4A3FC031E8954BE001669ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4A3FC061E8954BE001669ED /* Sound_Board.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sound_Board.xcdatamodel; sourceTree = "<group>"; };
 		E4A3FC081E8954BE001669ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A3FC0B1E8954BE001669ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4A3FC0D1E8954BE001669ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4A3FC131E895C57001669ED /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				E4A3FBFE1E8954BE001669ED /* AppDelegate.swift */,
-				E4A3FC001E8954BE001669ED /* ViewController.swift */,
+				E4A3FC001E8954BE001669ED /* MainViewController.swift */,
+				E4A3FC131E895C57001669ED /* SoundViewController.swift */,
 				E4A3FC021E8954BE001669ED /* Main.storyboard */,
 				E4A3FC081E8954BE001669ED /* Assets.xcassets */,
 				E4A3FC0A1E8954BE001669ED /* LaunchScreen.storyboard */,
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A3FC141E895C57001669ED /* SoundViewController.swift in Sources */,
 				E4A3FC071E8954BE001669ED /* Sound_Board.xcdatamodeld in Sources */,
-				E4A3FC011E8954BE001669ED /* ViewController.swift in Sources */,
+				E4A3FC011E8954BE001669ED /* MainViewController.swift in Sources */,
 				E4A3FBFF1E8954BE001669ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
