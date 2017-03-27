@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Sound Board-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="Sound_Board" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,13 +34,17 @@
                             <constraint firstItem="5tG-kL-Ssh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sla-Bc-37H"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6ea-iW-PHJ">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="xyE-eV-j0j">
+                    <navigationItem key="navigationItem" title="Sound Board" id="6ea-iW-PHJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AtD-zn-FM4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xyE-eV-j0j">
                             <connections>
-                                <segue destination="rbd-d4-yFP" kind="show" id="Ds4-yP-Qjy"/>
+                                <segue destination="rbd-d4-yFP" kind="show" identifier="soundSegue" id="Ds4-yP-Qjy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5tG-kL-Ssh" id="xZ5-0Y-iLe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +83,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-ym-9Sc">
                                 <rect key="frame" x="172.5" y="234" width="30" height="30"/>
@@ -102,7 +106,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="pKF-ym-9Sc" id="4Io-PR-UFv"/>
                         <outlet property="nameTextField" destination="ILP-Db-d9k" id="1TV-Mv-dfb"/>
+                        <outlet property="playButton" destination="hzf-B0-4NS" id="7fd-jF-XAF"/>
                         <outlet property="recordButton" destination="wIg-oP-Ur4" id="JrX-uV-vOF"/>
                     </connections>
                 </viewController>
